@@ -31,13 +31,13 @@ j = 1, 0 for binary models, and j = 1, ..., Ref for multinomial models.. The row
 }
 
 \examples{
-df <- read.csv("https://stats.idre.ucla.edu/stat/data/binary.csv")
-df$hRank[df$rank==1 | df$rank==2] <- 1
-df$hRank[df$rank==3 | df$rank==4] <- 0
-logit1 <- glm(admit ~ gre + hRank + gpa, data=df, binomial)
-setval1 <- expand.grid(gre=seq(250,800,50), hRank=0:1, gpa=mean(df$gpa))
+data(adm)
+adm$hRank[adm$rank==1 | adm$rank==2] <- 1
+adm$hRank[adm$rank==3 | adm$rank==4] <- 0
+logit1 <- glm(admit ~ gre + hRank + gpa, data=adm, binomial)
+setval1 <- expand.grid(gre=seq(250,800,50), hRank=0:1, gpa=mean(adm$gpa))
 margins1 <- margEffects(logit1, setval1)
-probit1 <- glm(admit ~ gre + hRank + gpa, data=df, binomial(link=probit))
+probit1 <- glm(admit ~ gre + hRank + gpa, data=adm, binomial(link=probit))
 margins2 <- margEffects(probit1, setval1, method="probit")
 
 }

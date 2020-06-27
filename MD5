@@ -1,6 +1,8 @@
-f69384475ccd05af934a22b4b69300f6 *DESCRIPTION
+900b7c613266bad81e5d0026f5622f39 *DESCRIPTION
 0933300f7c694716f98009d262d4de2c *NAMESPACE
-701be64d8947a304d70ef45deb2e0b9a *R/margEffects.R
-8c1d26ca3a2ce9ddf29954ee3991ec23 *R/predProbs.R
-9d30296fdc591e7548d68bc96cd19b7c *man/margEffects.Rd
-a26b4c88f2345061bb3d2700a2145a44 *man/predProbs.Rd
+e7c95d8e1a5dc17c24b685d2f30d26e7 *R/margEffects.R
+e42ce640c8613319cd886ccd8a276ba7 *R/predProbs.R
+0d09fa8f9caa0fe70fbf4f796ff91561 *data/adm.RData
+2ee219b403f3c297585b8fee7c23e807 *man/adm.Rd
+7821b72ed2508fd821fac3e7a6deb809 *man/margEffects.Rd
+c762e5753ae7537c7e5ba2df218307da *man/predProbs.Rd

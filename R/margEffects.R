@@ -1,6 +1,6 @@
 # An R function for computing predicted probabilities for binary,
 # ordinal, multinomial, & generalized ordinal logit & probit models
-# Version 1.0, Tim Liao, University of Illinois, March 2020
+# Version 1.0.1, Tim Liao, University of Illinois, March 2020
 
 margEffects <- function(model,specs,effect=1,method="logit") {
   if (method=="logit" | method=="probit") {
